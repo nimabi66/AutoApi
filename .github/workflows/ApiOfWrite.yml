@@ -1,7 +1,8 @@
 #创建系列api，每天调用一次
 name: Run Api.Write
 
-on: 
+on:
+  workflow_dispatch:
   release:
     types: [published]
   push:
