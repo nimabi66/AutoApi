@@ -2,11 +2,12 @@
 name: Run Api.Read
 
 on: 
+  workflow_dispatch:
   release:
     types: [published]
   push:
     tags:
-    - 'v*'
+    - 'v*' 
   #  branches: 
   #    - master
   schedule:
